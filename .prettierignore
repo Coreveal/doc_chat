@@ -1,0 +1,6 @@
+*.json
+*.yml
+node_modules
+.localstack
+dist
+coverage

@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  doc_chat:
+    container_name: doc_chat
+    build: .
+    env_file:
+    -  .env
+    ports:
+    -  "4000:3000"
+    command: ["npm", "run", "start"]
+    volumes:
+    - ./:/app
